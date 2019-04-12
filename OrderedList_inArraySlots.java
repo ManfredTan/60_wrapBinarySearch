@@ -11,6 +11,7 @@ public class OrderedList_inArraySlots
 
     private java.util.ArrayList<Integer> list_iAS;
 
+    private int cost;
 
     /**
       @return the index of the first occurrence of
@@ -34,10 +35,13 @@ public class OrderedList_inArraySlots
     // }
 
     public int indexOf( Integer findMe) {
+        cost = 0;
         return indexOfRecursively(0, list_iAS.size() - 1, findMe);
     }
 
     private int indexOfRecursively( int low, int hi, Integer findMe) {
+        cost += 1;
+
         int currentPage = (low + hi)/2;
 
         if (low > hi) return -1;
@@ -108,4 +112,12 @@ public class OrderedList_inArraySlots
     public Integer remove( int index) {
         return list_iAS.remove( index);
     }
+
+    // return number of iterations/comparisons
+    public int cost() {
+        return cost;
+    }
+
+
+
 }

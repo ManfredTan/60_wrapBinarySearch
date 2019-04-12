@@ -15,8 +15,3 @@ as of 2019-04-10 04:48
     4) Solution to R.A: if (list_iAS.get(currentPage) < findMe) return indexOfRecursively(currentPage + 1, hi, findMe);
     5) Combination: no combination.
     6) Leftover: return indexOfRecursively(low,currentPage - 1, findMe);
-
-
-0 State the problem
-1 State the recursive abstraction
-2 Identify the parts of this solution that correspond to the six parts of a generalized recursive solution.

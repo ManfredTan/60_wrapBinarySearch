@@ -7,3 +7,12 @@ as of 2019-04-10 04:48
 
 
 # Recursive solution
+
+0.
+1.
+2.
+
+
+0. State the problem
+1. State the recursive abstraction
+2. Identify the parts of this solution that correspond to the six parts of a generalized recursive solution.
